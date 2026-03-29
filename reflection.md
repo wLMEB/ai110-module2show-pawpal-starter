@@ -2,15 +2,27 @@
 
 ## 1. System Design
 
+Add a pet
+See tasks
+Enter task
+
 **a. Initial design**
 
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
 
+There will be a Pet Class, a Task Class, and an Owner Class.
+Pet Class will be able to add/edit pet, their health information, with functions to get all of that attributes respectivly.
+Task Class will be able to add/edit task, task is done on which pet, at what time, with what duration, and priority, with functions to get all of that attributes respectivly.
+Owner class to have onwners's name and their pets
+
+
 **b. Design changes**
 
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
+
+Yes. Claude suggested some changes over the relationships between the classes such as Owner manages tasks, and pet belongs to Owner. Also I didn't know Scheduler would be a required class until Phase 2, so that is added as well.
 
 ---
 
